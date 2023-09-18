@@ -281,13 +281,6 @@ aside {
 }
 
 /* CSS Grid Layout */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  column-gap: 75px;
-  row-gap: 60px;
-  align-items: start;
-}
 
 .main-header {
   margin-bottom: 0;
