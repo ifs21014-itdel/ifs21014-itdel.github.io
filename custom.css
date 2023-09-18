@@ -363,7 +363,6 @@ input[type="submit"] {
 }
 
 .container .kontak {
-  margin: 0px 0px 0px 450px;
 }
 
 .container .form {
@@ -396,4 +395,21 @@ select {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid black;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.radio-container label {
+  margin-right: 15px;
+}
+
+.kontak h2 {
+  text-align: center; /* Mengatur teks judul di tengah secara horizontal */
+}
+
+#label {
+  align-items: center;
 }

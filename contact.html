@@ -19,71 +19,51 @@
           <a href="login.html">Login</a>
         </nav>
       </header>
-      <div class="kontak">
-        <form>
-          <table cellpadding="5">
-            <caption>
-              <h2>Hubungi Kami</h2>
-            </caption>
-            <tr>
-              <td><label for="name">Nama Lengkap</label></td>
-              <td><input type="text" id="name" name="name" /></td>
-            </tr>
-            <tr>
-              <td><label for="email">Alamat Email</label></td>
-              <td><input type="text" id="email" name="email" /></td>
-            </tr>
-            <tr>
-              <td>
-                <label for="kategori">Kategori <br /></label>
-              </td>
-              <td class="radio-container">
-                <input
-                  type="radio"
-                  id="report"
-                  name="kategori"
-                  value="report"
-                />
-                <label for="report">Laporan</label>
-              </td>
-              <td class="radio-container">
-                <input
-                  type="radio"
-                  id="feedback"
-                  name="kategori"
-                  value="feedback"
-                />
-                <label for="feedback">Masukan</label>
-              </td>
-            </tr>
 
-            <tr>
-              <td><label for="message">Pesan</label></td>
-              <td>
-                <textarea id="message" name="message" rows="5"></textarea>
-              </td>
-            </tr>
-            <tr align="center">
-              <td colspan="2">
-                <input
-                  type="checkbox"
-                  id="verification"
-                  name="verification"
-                  value="1"
-                  required
-                />
-                <label for="verification">Konfirmasi Tindakan</label>
-              </td>
-            </tr>
-            <tr align="center">
-              <td colspan="2">
-                <input type="submit" value="Kirim" />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2"><hr /></td>
-            </tr>
-          </table>
+      <div class="kontak">
+        <h2>Hubungi Kami</h2>
+        <form>
+          <div class="form-group">
+            <label for="fname">Nama Lengkap</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Alamat Email</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div class="form-group">
+            <label>Kategori</label>
+            <div class="radio-container">
+              <input type="radio" id="report" name="kategori" value="Laporan" />
+              <label for="report">Laporan</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="feedback"
+                name="kategori"
+                value="Masukkan"
+              />
+              <label for="feedback">Masukkan</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              type="checkbox"
+              id="verification"
+              name="verification"
+              value="1"
+              required
+            />
+            <label for="verification" id="label">Konfirmasi Tindakan</label>
+          </div>
+          <div class="form-actions">
+            <center><input type="submit" value="Kirim" /></center>
+          </div>
         </form>
       </div>
     </div>
