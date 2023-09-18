@@ -363,6 +363,8 @@ input[type="submit"] {
 }
 
 .container .kontak {
+  align-items: center;
+  width: 100%;
 }
 
 .container .form {
