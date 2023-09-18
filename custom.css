@@ -37,7 +37,7 @@ article {
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
+  border-bottom: 1px solid #1098ad;
   padding: 50px 0;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -120,7 +120,7 @@ li:last-child {
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
+  border-bottom: 1px solid #1098ad;
 }
 
 li:first-child {
@@ -318,7 +318,7 @@ input[type="text"] {
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 input[type="text"],
@@ -328,9 +328,10 @@ textarea {
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
+/* Mengatur tombol submit agar berada di tengah vertikal */
 input[type="submit"] {
   background-color: #1098ad;
   color: white;
@@ -339,9 +340,10 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  /* Menempatkan tombol di tengah */
-  grid-column: span 2; /* Mengambil dua kolom grid */
+  /* Mengambil dua kolom grid */
+  grid-column: span 2;
   text-align: center; /* Mengatur teks di tengah */
+  align-self: center; /* Mengatur tombol di tengah vertikal */
 }
 
 .radio-container {
@@ -393,15 +395,5 @@ select {
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid black;
-}
-
-input[type="submit"] {
-  background-color: #1098ad;
-  color: white;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  border-bottom: 1px solid black;
 }
