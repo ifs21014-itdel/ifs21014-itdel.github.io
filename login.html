@@ -2,113 +2,63 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title><Strong>Login</Strong></title>
+    <title>Praktikum PABWE</title>
+    <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
-    <header>
-      <h1><strong>Login</strong></h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="challanges.html">Challenges</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="login.html">Login</a>
-        <hr> 
-      </nav>
-    </header>
-    
-    <main>
-      <table>
-        <thead>
-          <tr align="left">
-            <th valign ="top">
-              <main>
-                <fieldset>
-                  <table cellpadding="6">
-                      <legend><h2><strong>Login</strong></h2></legend>
-                    
-                    <tr>
-                      <td>
-                        <label for="email">Email</label>
-                      </td>
-                      <td>
-                        <input type="email" id="email" name="email" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="password">Password</label>
-                      </td>
-                      <td>
-                        <input type="password" id="password" name="password" />
-                      </td>
-                    </tr>
-                    <tr align="center">
-                      <td colspan="2">
-                        <input type="submit" value="Submit" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="6"><hr /></td>
-                    </tr>
-                  </table>
-                </fieldset>
-              </main>
-            </th>
-            <th valign ="top">
-              <main>
-               <fieldset> <table cellpadding="6">
-                  <legend><h2><strong>Register</strong></h2></legend>
-                <tr>
-                  <td>
-                    <label for="nama">Nama Lengkap</label>
-                  </td>
-                  <td>
-                    <input type="text" name="name" id="name" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="email">Email</label>
-                  </td>
-                  <td>
-                    <input type="email" name="email" id="email" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="pekerjaan">Pekerjaan</label>
-                  </td>
-                  <td>
-                    <select name="pekerjaan" id="perkerjaan">
-                      <option value="mahasiswa">Mahasiswa</option>
-                      <option value="asistendosen">Asisten Dosen</option>
-                      <option value="dosen">Dosen</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="password">Password</label>
-                  </td>
-                  <td>
-                    <input type="password" id="password" name="password" />
-                  </td>
-                </tr>
-                <tr align="center">
-                  <td colspan="2">
-                    <input type="submit" value="Submit" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="3"><hr /></td>
-                </tr>
-              </table></fieldset>
-              </form>
-            </main>
-            </th>
-          </tr>
-        </thead>
-      </table>
+    <!-- Membuat artikel sederhana dengan HTML -->
+    <div class="container">
+      <header class="main-header clearfix">
+        <h1>&#128216; Majalah Kode</h1>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="challanges.html">Challenges</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html">Login</a>
+        </nav>
+      </header>
+
+      <!-- Hanya untuk flexbox -->
+      <!-- <div class="row"> -->
+      <div class="form">
+        <form>
+          <div class="all-data-login">
+            <div class="login">
+              <p>Login</p>
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+              <label for="password">Password</label>
+              <input type="text" id="email" name="email" />
+              <div class="kirim">
+                <input type="submit" value="Kirim" />
+              </div>
+            </div>
+
+            <div class="register">
+              <p>Register</p>
+              <label for="email">Nama Lengkap</label>
+              <input type="text" id="email" name="email" />
+              <label for="password">Email</label>
+              <input type="text" id="email" name="email" />
+              <div class="data-pekerjaan">
+                <label for="data">Pekerjaan</label>
+                <select name="opsi" id="id">
+                  <option value="mahasiswa">Mahasiswa</option>
+                  <option value="wiraswasta">Wiraswasta</option>
+                </select>
+              </div>
+              <label for="password">Password</label>
+              <input type="text" id="email" name="email" />
+              <div class="kirim">
+                <input type="submit" value="Kirim" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
